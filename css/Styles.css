@@ -1,0 +1,123 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&family=Poppins:wght@300;400;500;600;700&family=Ubuntu:wght@400;500;700&display=swap');
+*{
+	margin:0;
+	padding:0;
+	overflow:hidden;
+	font-family: 'Lato', sans-serif;
+font-family: 'Poppins', sans-serif;
+font-family: 'Ubuntu', sans-serif;
+}
+.container{
+	width:100%;
+	height:100vh;
+	background:#B5C99A;
+}
+.container .cardBg{
+	width:500px;
+	height:450px;
+	position:relative;
+	margin:30px auto;
+	
+}
+.cardBgRegister{
+	width:500px;
+	height:575px;
+	position:relative;
+	margin:30px auto;
+}
+.container .cardBg img, .cardBgRegister img{
+	width:100%;
+	height:100%;
+	object-fit:cover;
+	position:relative;
+}
+.cardBgOverlay{
+	content:'';
+	position:absolute;
+	width:100%;
+	height:100%;
+	top:0;
+	left:0;
+	background:#313866;
+	opacity:0.8;
+}
+.container .card{
+    width:500px;
+	height:600px;
+	margin:0 auto;
+	padding:20px;
+	margin-top:10px;
+	margin-bottom:10px;
+	position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translate(-50%, 0px);
+
+}
+.container .cardProfile{
+    width:500px;
+	height:fit-content;
+	margin:0 auto;
+	padding:20px;
+	margin-top:10px;
+	margin-bottom:10px;
+	background:#fff;
+}
+.card_register{
+	 width:500px;
+	height:900px;
+	margin:0 auto;
+	padding:20px;
+	margin-top:10px;
+	margin-bottom:10px;
+	position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translate(-50%, 0px);
+}
+.container .card h2,.card_register h2{
+	text-align:center;
+}
+.card h2,label,.card_register h2{
+	color:#fff;
+}
+#save_btn,#reset_btn,#logoutBtn{
+	padding:5px 30px;
+	border:none;
+	outline:none;
+	margin:0 10px;
+}
+#save_btn,#logoutBtn{
+	background:#557A46;
+	color:#fff;
+	font-size:16px;
+}
+#save_btn:hover{
+	background:#7A9D54;
+}
+#reset_btn{
+	background:#FD8D14;
+	color:#fff;
+	font-size:16px;
+}
+#reset_btn:hover{
+	background:#fd8d14c9;
+}
+.text-center{
+	margin-top:30px;
+}
+.cardbtm{
+	margin-top: 30px;
+    text-align: center;
+    color: #fff;
+}
+.cardbtm a{
+	color:#fff;
+	
+}
+.cardbtm a:hover{
+	text-decoration:underline;
+}
+.EmailR,.PasswordR,.NameR{
+	color:red;
+}

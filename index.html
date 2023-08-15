@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF=8">
+	<meta name="viewport" content="width=device-width,initial-scale=1.0">
+	  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+<link rel="stylesheet" href="css/Styles.css">
+	<title>Login</title>
+</head>
+<body>
+	<div class="container">
+		<div class="row">
+			<div class="col col-sm-12 col-md-12 col-lg-12 col-xs-12">
+				<div class="cardBg">
+					<img src="images/LoginBg.jpg">
+					<span class="cardBgOverlay"></span>
+				</div>
+				<div class="card">
+				<h2>Login Form</h2>
+				<form action="#">
+					<div class="form-group">
+					<p class="EmailR"></p>
+						<label>Email</label>
+						<input type="email" class="form-control" id="email" name="email" placeholder="Enter Email" required> 
+					</div>
+					<div class="form-group">
+					<p class="PasswordR"></p>
+						<label>Password</label>
+						<input type="password" class="form-control" id="password" name="password" placeholder="Enter Password" required> 
+					</div>
+					<div class="text-center">
+						<button type="button" onclick="saveData()" id="save_btn">Login</button>
+						<button type="reset" id="reset_btn">Reset</button>
+					</div>
+					<div class="cardbtm">
+						<p>Need an account</p> 
+							<a href="Register.html">Register</a>
+					</div>
+				</form>
+				</div>
+			</div>
+		</div>
+	</div>
+	<script src="js/LoginPageScript.js"></script>
+</body>
+</html>

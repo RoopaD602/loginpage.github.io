@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width,initial-scale=1.0">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+<link rel="stylesheet" href="css/Styles.css">
+<!-- jQuery library -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+
+<!-- Latest compiled JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+	<title>Profile Page </title>
+</head>
+<body>
+<div class="container">
+		<div class="row">
+			<div class="col col-sm-12 col-md-12 col-lg-12 col-xs-12">
+				<div class="cardProfile">
+				<h2>Profile</h2>
+				<button onclick="logOut()" style="float:right" id="logoutBtn">Logout</button>
+				<hr>
+				<h3>Welcome</h3>
+				<h4>Name:
+					<script>
+						document.write(localStorage.getItem("name"));
+					</script>
+				
+				</h4>
+				<h6> Your Email:
+				<script>
+					document.write(localStorage.getItem("email"));
+				</script>
+				</h6>
+				</div>
+			</div>
+		</div>
+</div>
+<script src="js/Logout.js"></script>
+</body>
+</html>

@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF=8"/>
+	<meta name="viewport" content="width=device-width,initial-scale=1.0"/>
+	<!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+<link rel="stylesheet" href="css/Styles.css">
+<!-- jQuery library -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+
+<!-- Latest compiled JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+	<title>Registration</title>
+</head>
+<body>
+	
+	<div class="container">
+		<div class="row">
+			<div class="col col-sm-12 col-md-12 col-lg-12 col-xs-12">
+			<div class="cardBgRegister">
+					<img src="images/LoginBg.jpg">
+					<span class="cardBgOverlay"></span>
+				</div>
+				<div class="card_register">
+				<h2>Registration Form</h2>
+				<form action="#">
+					<div class="form-group">
+					<p class="NameR" id="NameErr"></p>
+						<label>Name</label>
+						<input type="text" class="form-control" id="name" name="name" placeholder="Enter Name">
+					</div>
+					<div class="form-group">
+					<p class="EmailR" id="EmailErr"></p>
+						<label>Email</label>
+						<input type="Email" class="form-control" id="email" name="email" placeholder="Enter Email">
+					</div>
+					<div class="form-group">
+					<p class="PasswordR" id="PasswordErr"></p>
+						<label>Password</label>
+						<input type="Password" class="form-control" id="password" name="password" placeholder="Enter Password">
+					</div>
+					<div class="text-center">
+						<button type="button" onclick="saveData()" id="save_btn">Register</button>
+						<button type="reset" id="reset_btn">Reset</button>
+					</div>
+					<div class="cardbtm"><p>Already have an account</p><a href="Login.html">Login</a></div>
+				</form>
+				</div>
+			</div>
+		</div>
+	</div>
+	<script src="js/RegisterPageScript.js"></script>
+</body>
+</html>
